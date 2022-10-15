@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import propertytaxcalculator.TaxFactory;
 import propertytaxcalculator.TaxNames;
 import propertytaxcalculator.taxcalculation.TaxCalculation;

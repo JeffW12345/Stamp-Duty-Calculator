@@ -1,12 +1,9 @@
 import org.junit.Test;
 import propertytaxcalculator.TaxFactory;
 import propertytaxcalculator.TaxNames;
-import propertytaxcalculator.taxcalculation.TaxCalculation;
 import propertytaxcalculator.taxtype.TaxType;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 public class CalculationTests {

@@ -32,8 +32,6 @@ public class ServerController {
                                     "</body>" +
                                     "</html>"));
 
-            // A POST to /profile submits the form, then returns a plain text page with a summary of the
-            // profile.
             post("/").to(request -> {
                 String taxType = request.part("tax-type").value();
                 String propertyValue = request.part("property-value").value();

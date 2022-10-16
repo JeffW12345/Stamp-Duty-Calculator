@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dff25ecb-17f8-4302-9847-f80341c0a799" name="Changes" comment="" />
+    <list default="true" id="dff25ecb-17f8-4302-9847-f80341c0a799" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_undertow_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_undertow_servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_undertow_websockets_jsr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/InvalidTaxSpecified.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxBand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxBands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxNames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxcalculation/LbbtCalculation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxcalculation/TaxCalculation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/LbbtTax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/TaxType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CalculationTests.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,17 +55,19 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Downloads\junior-java-test-zipped (1)\TaxCalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculationTests">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="propertytaxcalculator.Main" />
       <module name="TaxCalculator" />
@@ -72,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="JUnit.All in TaxCalculator" />
       </list>
     </recent_temporary>
@@ -88,5 +110,17 @@
       <updated>1665821352327</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

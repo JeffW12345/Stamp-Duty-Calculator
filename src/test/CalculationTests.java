@@ -9,6 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalculationTests {
     private TaxType taxType;
 
+    // Expected figures calculated manually and using https://revenue.scot/calculate-tax/calculate-property-transactions#calculator
+
     @Test
     public void propertyValZeroReturnsZeroLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 0);
@@ -41,6 +43,12 @@ public class CalculationTests {
         taxType = new TaxFactory().create(TaxNames.LBBT, 199999.99);
         taxType.calculate();
         assertEquals(1100, taxType.getTaxDue());
+    }
+    @Test
+    public void propertyValuedAMillionReturns78350Lbbt(){
+        taxType = new TaxFactory().create(TaxNames.LBBT, 1000000);
+        taxType.calculate();
+        assertEquals(78350, taxType.getTaxDue());
     }
 
 }

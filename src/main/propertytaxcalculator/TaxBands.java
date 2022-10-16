@@ -1,7 +1,5 @@
 package propertytaxcalculator;
 
-import propertytaxcalculator.TaxBand;
-
 import java.util.ArrayList;
 
 public class TaxBands {

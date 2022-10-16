@@ -1,6 +1,5 @@
 package propertytaxcalculator;
 
-import java.math.BigDecimal;
 
 public class TaxBand {
     public double from;

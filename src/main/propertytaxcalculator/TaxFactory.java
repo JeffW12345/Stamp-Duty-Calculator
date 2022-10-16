@@ -4,7 +4,6 @@ import propertytaxcalculator.taxcalculation.LbbtCalculation;
 import propertytaxcalculator.taxtype.LbbtTax;
 import propertytaxcalculator.taxtype.TaxType;
 
-import java.math.BigDecimal;
 
 public class TaxFactory {
 

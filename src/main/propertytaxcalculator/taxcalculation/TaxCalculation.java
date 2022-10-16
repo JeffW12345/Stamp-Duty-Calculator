@@ -4,5 +4,5 @@ import propertytaxcalculator.TaxBands;
 
 
 public interface TaxCalculation {
-    public double calculateTax(TaxBands taxbands, double propertyValue);
+    double calculateTax(TaxBands taxbands, double propertyValue);
 }

@@ -3,7 +3,6 @@ import propertytaxcalculator.InvalidTaxSpecified;
 import propertytaxcalculator.TaxFactory;
 import propertytaxcalculator.TaxNames;
 import propertytaxcalculator.taxtype.LbbtTax;
-import propertytaxcalculator.taxtype.TaxType;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;

@@ -3,7 +3,6 @@ package propertytaxcalculator.taxcalculation;
 import propertytaxcalculator.TaxBand;
 import propertytaxcalculator.TaxBands;
 
-import java.math.BigDecimal;
 
 public class LbbtCalculation implements TaxCalculation{
     @Override

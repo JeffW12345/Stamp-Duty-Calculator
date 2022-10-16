@@ -18,7 +18,7 @@ public class Main {
                                     "<html>" +
                                     "<body>" +
                                     "<h2>" + "Property tax calculator" + "</h2>" +
-                                    "<form action=\"/action_page.php\">" +
+                                    "<form method=\"post\">" +
                                     "<label for=\"property-value\"> Value of property: </label> <br>" +
                                     "<input type=\"text\" id=\"fname\" name=\"property-value\">" + "<br>" +
                                     "<label for=\"tax-type\">" + "Choose a tax type: </label>" +

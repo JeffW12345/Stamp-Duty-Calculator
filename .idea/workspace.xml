@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dff25ecb-17f8-4302-9847-f80341c0a799" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBand.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBands.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBands.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/taxcalculation/LbbtCalculation.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/taxcalculation/LbbtCalculation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/test-classes/FactoryTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/test-classes/FactoryTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
     </list>

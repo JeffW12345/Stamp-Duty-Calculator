@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="simpleframework.simple.http" type="repository">
+    <properties maven-id="org.simpleframework:simple-http:6.0.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simpleframework/simple-http/6.0.1/simple-http-6.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/simpleframework/simple-common/6.0.1/simple-common-6.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/simpleframework/simple-transport/6.0.1/simple-transport-6.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

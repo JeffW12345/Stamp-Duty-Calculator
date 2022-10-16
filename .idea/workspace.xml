@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dff25ecb-17f8-4302-9847-f80341c0a799" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_undertow_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_undertow_servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_undertow_websockets_jsr.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/simpleframework_simple_http.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/io_undertow_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/io_undertow_servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/io_undertow_websockets_jsr.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/InvalidTaxSpecified.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxBand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxBands.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxcalculation/LbbtCalculation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxcalculation/TaxCalculation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/LbbtTax.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/TaxType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CalculationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

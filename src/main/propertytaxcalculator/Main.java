@@ -18,7 +18,7 @@ public class Main {
                                     "<html>" +
                                     "<body>" +
                                     "<h2>" + "Property tax calculator" + "</h2>" +
-                                    "<form method=\"post\">" +
+                                    "<form method=\"get\">" +
                                     "<label for=\"property-value\"> Value of property: </label> <br>" +
                                     "<input type=\"text\" id=\"fname\" name=\"property-value\">" + "<br>" +
                                     "<label for=\"tax-type\">" + "Choose a tax type: </label>" +
@@ -32,8 +32,8 @@ public class Main {
                                     "</form>" +
                                     "</body>" +
                                     "</html>");
-                            });
-                    }
+                });
+    }
 
 
     public static void main(String[] args) throws IOException {

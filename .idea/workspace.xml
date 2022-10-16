@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dff25ecb-17f8-4302-9847-f80341c0a799" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/FactoryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${project.build.directory}/test-classes/CalculationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/test-classes/CalculationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBand.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBands.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxBands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/TaxFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/taxcalculation/LbbtCalculation.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/classes/propertytaxcalculator/taxcalculation/LbbtCalculation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${project.build.directory}/test-classes/FactoryTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/${project.build.directory}/test-classes/FactoryTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/CalculationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CalculationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <recent name="C:\Users\User\Downloads\junior-java-test-zipped (1)\TaxCalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FactoryTests">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="propertytaxcalculator.Main" />
       <module name="TaxCalculator" />
@@ -89,10 +91,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FactoryTests" />
-        <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in TaxCalculator" />
+        <item itemvalue="JUnit.FactoryTests" />
+        <item itemvalue="JUnit.CalculationTests" />
       </list>
     </recent_temporary>
   </component>

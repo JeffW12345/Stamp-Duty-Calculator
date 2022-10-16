@@ -21,7 +21,7 @@ public class Main {
                                     "<form action=\"/action_page.php\">" +
                                     "<label for=\"property-value\"> Value of property: </label> <br>" +
                                     "<input type=\"text\" id=\"fname\" name=\"property-value\">" + "<br>" +
-                                    "<label for=\"cars\">" + "Choose a tax type: </label>" +
+                                    "<label for=\"tax-type\">" + "Choose a tax type: </label>" +
                                     "<br>" +
                                     "<select name=\"tax-type\">" +
                                     "<option value=\"lbbt\"> Lbbt (Scottish property tax) </option>" +

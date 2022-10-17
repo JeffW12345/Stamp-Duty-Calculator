@@ -6,7 +6,6 @@ public class TaxBand {
     private double to;
     private double rate;
 
-
     private double size;
 
     public TaxBand(double from, double to, double rate) {
@@ -16,11 +15,15 @@ public class TaxBand {
         size = to - from;
     }
 
-    public double getSize() {
-        return size;
+    public double calculateBandTaxFor(double propertyValue) {
+        return Math.round(taxableInThisBand(propertyValue) * rate * 100.0) / 100.0;
     }
 
-    public double calcTaxThisBand(double remainder) {
-        return remainder >= size ? rate * size : rate * remainder;
+    public double taxableInThisBand(double propertyValue) {
+        if(propertyValue < from) return 0;
+        if(propertyValue >= from & propertyValue < to){
+            return propertyValue - from;
+        }
+        return to - from;
     }
 }

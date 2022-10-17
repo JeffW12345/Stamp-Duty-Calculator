@@ -6,21 +6,20 @@ public class TaxBands {
 
     private ArrayList<TaxBand> taxBandList = new ArrayList<TaxBand>();
 
-
     public void add(TaxBand taxBand){
         taxBandList.add(taxBand);
     }
 
     public double calculateTax(double propertyValue) {
-        double taxDue = 0;
-        double remainder = propertyValue;
+        RunningTaxTotal runningTaxTotal = new RunningTaxTotal();
+        TaxableAmountProcessed taxableAmountProcessed = new TaxableAmountProcessed(propertyValue);
         for(TaxBand taxBand: taxBandList){
-            if(remainder <= 0){
+            if(taxableAmountProcessed.zeroRemaining()){
                 break;
             }
-            taxDue += taxBand.calcTaxThisBand(remainder);
-            remainder -= taxBand.getSize();
+            taxableAmountProcessed.updateFor(taxBand, propertyValue);
+            runningTaxTotal.updateFor(taxBand, propertyValue);
         }
-        return Math.round(taxDue * 100.0) / 100.0;
+        return runningTaxTotal.getTotalSoFar();
     }
 }

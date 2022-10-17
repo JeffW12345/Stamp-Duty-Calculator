@@ -14,9 +14,4 @@ public class FactoryTests {
         assertThat(new TaxFactory().create(TaxNames.LBBT, 0)).isExactlyInstanceOf(LbbtTax.class);
     }
 
-    @Test
-    public void throwsException(){
-        assertThrows(InvalidTaxSpecified.class, () -> new TaxFactory().create(TaxNames.IMAGINARYTAX, 0));
-    }
-
 }

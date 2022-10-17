@@ -14,6 +14,7 @@ public class CalculationTests {
     @Test
     public void propertyValZeroReturnsZeroLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 0);
+        taxType.calculate();
         assertEquals(0, taxType.getTaxDue());
     }
 

@@ -1,13 +1,12 @@
 package propertytaxcalculator.taxtype;
 
 import propertytaxcalculator.TaxBand;
-import propertytaxcalculator.taxcalculation.TaxCalculation;
 
 public class LbbtTax extends TaxType {
 
 
-    public LbbtTax(TaxCalculation taxCalculation, double propertyValue) {
-        super(taxCalculation, propertyValue);
+    public LbbtTax(double propertyValue) {
+        super(propertyValue);
     }
 
     @Override

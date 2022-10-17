@@ -1,18 +1,15 @@
 package propertytaxcalculator;
 
-import propertytaxcalculator.taxtype.TaxType;
-
 import java.util.ArrayList;
 
 public class TaxBands {
 
-    public ArrayList<TaxBand> taxBandList = new ArrayList<TaxBand>();
+    private ArrayList<TaxBand> taxBandList = new ArrayList<TaxBand>();
 
 
     public void add(TaxBand taxBand){
         taxBandList.add(taxBand);
     }
-
 
     public double calculateTax(double propertyValue) {
         double taxDue = 0;

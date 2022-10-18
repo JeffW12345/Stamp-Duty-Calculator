@@ -1,5 +1,6 @@
 package propertytaxcalculator;
 
+import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.LbbtTax;
 import propertytaxcalculator.taxtype.TaxType;
 

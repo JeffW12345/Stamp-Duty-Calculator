@@ -1,5 +1,8 @@
-package propertytaxcalculator;
+package propertytaxcalculator.tax;
 
+
+import propertytaxcalculator.RunningTaxTotal;
+import propertytaxcalculator.TaxableAmountProcessed;
 
 public class TaxBand {
     private double from;

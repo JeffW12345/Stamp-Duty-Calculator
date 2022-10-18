@@ -8,7 +8,7 @@ public class TaxableAmountProcessed {
         this.remaining = propertyValue;
     }
 
-    boolean zeroRemaining(){
+    public boolean zeroRemaining(){
         return remaining <= 0;
     }
 

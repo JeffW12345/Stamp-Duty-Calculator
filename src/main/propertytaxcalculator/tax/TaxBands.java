@@ -1,4 +1,8 @@
-package propertytaxcalculator;
+package propertytaxcalculator.tax;
+
+import propertytaxcalculator.RunningTaxTotal;
+import propertytaxcalculator.TaxableAmountProcessed;
+import propertytaxcalculator.tax.TaxBand;
 
 import java.util.ArrayList;
 

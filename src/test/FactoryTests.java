@@ -1,11 +1,9 @@
 import org.junit.jupiter.api.Test;
-import propertytaxcalculator.InvalidTaxSpecified;
 import propertytaxcalculator.TaxFactory;
-import propertytaxcalculator.TaxNames;
+import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.LbbtTax;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class FactoryTests {
 

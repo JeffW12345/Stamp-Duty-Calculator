@@ -5,11 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/RunningTaxTotal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/RunningTaxTotal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/ServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxBand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxBands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxableAmountProcessed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxableAmountProcessed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/LbbtTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/LbbtTax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/TaxType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/TaxType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CalculationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CalculationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/FactoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/FactoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxBand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxBands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxNames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxableAmountProcessed.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/TaxableAmountProcessed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/LbbtTax.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/LbbtTax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/TaxType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/taxtype/TaxType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CalculationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CalculationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FactoryTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FactoryTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +75,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.CalculationTests">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="propertytaxcalculator.Main" />
       <module name="TaxCalculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="propertytaxcalculator.*" />
+          <option name="PATTERN" value="propertytaxcalculator.tax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="JUnit.FactoryTests" />
       </list>
     </recent_temporary>

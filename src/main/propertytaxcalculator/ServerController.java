@@ -3,6 +3,7 @@ package propertytaxcalculator;
 import com.vtence.molecule.Response;
 import com.vtence.molecule.WebServer;
 import com.vtence.molecule.routing.Routes;
+import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.TaxType;
 
 import java.io.IOException;

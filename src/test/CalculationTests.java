@@ -1,6 +1,6 @@
 import org.junit.Test;
 import propertytaxcalculator.TaxFactory;
-import propertytaxcalculator.TaxNames;
+import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.TaxType;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

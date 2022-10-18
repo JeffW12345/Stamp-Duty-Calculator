@@ -12,7 +12,7 @@ public class TaxableAmountProcessed {
         return remaining <= 0;
     }
 
-    public void updateFor(TaxBand taxBand, double propertyValue) {
-        remaining -= taxBand.taxableInThisBand(propertyValue);
+    public void add(double taxableInThisBand) {
+        remaining -= taxableInThisBand;
     }
 }

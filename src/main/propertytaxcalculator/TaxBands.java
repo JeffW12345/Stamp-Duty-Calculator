@@ -17,8 +17,8 @@ public class TaxBands {
             if(taxableAmountProcessed.zeroRemaining()){
                 break;
             }
-            taxableAmountProcessed.updateFor(taxBand, propertyValue);
-            runningTaxTotal.updateFor(taxBand, propertyValue);
+            taxBand.updateTaxProcessed(propertyValue, taxableAmountProcessed);
+            taxBand.updateRunningTotal(propertyValue, runningTaxTotal);
         }
         return runningTaxTotal.getTotalSoFar();
     }

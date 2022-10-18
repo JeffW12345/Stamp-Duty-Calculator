@@ -7,7 +7,7 @@ public class RunningTaxTotal {
         return totalSoFar;
     }
 
-    public void updateFor(TaxBand taxBand, double propertyValue) {
-        totalSoFar += taxBand.calculateBandTaxFor(propertyValue);
+    public void add(double toAdd) {
+        totalSoFar += toAdd;
     }
 }

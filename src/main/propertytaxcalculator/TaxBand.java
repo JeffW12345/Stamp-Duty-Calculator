@@ -15,8 +15,8 @@ public class TaxBand {
         size = to - from;
     }
 
-    public double calculateBandTaxFor(double propertyValue) {
-        return Math.round(taxableInThisBand(propertyValue) * rate * 100.0) / 100.0;
+    public void updateRunningTotal(double propertyValue, RunningTaxTotal runningTaxTotal) {
+        runningTaxTotal.add(Math.round(taxableInThisBand(propertyValue) * rate * 100.0) / 100.0);
     }
 
     public double taxableInThisBand(double propertyValue) {
@@ -25,5 +25,9 @@ public class TaxBand {
             return propertyValue - from;
         }
         return to - from;
+    }
+
+    public void updateTaxProcessed(double propertyValue, TaxableAmountProcessed taxableAmountProcessed){
+        taxableAmountProcessed.add(taxableInThisBand(propertyValue));
     }
 }

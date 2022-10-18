@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/RunningTaxTotal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/RunningTaxTotal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxBands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxableAmountProcessed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxableAmountProcessed.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

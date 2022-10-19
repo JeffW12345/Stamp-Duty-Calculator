@@ -1,6 +1,6 @@
-package propertytaxcalculator.taxtype;
+package main.propertytaxcalculator.taxtype;
 
-import propertytaxcalculator.tax.TaxBand;
+import main.propertytaxcalculator.tax.TaxBand;
 
 public class LbbtTax extends TaxType {
 

@@ -1,9 +1,8 @@
-package propertytaxcalculator;
+package main.propertytaxcalculator;
 
-import propertytaxcalculator.tax.TaxNames;
-import propertytaxcalculator.taxtype.LbbtTax;
-import propertytaxcalculator.taxtype.TaxType;
-
+import main.propertytaxcalculator.tax.TaxNames;
+import main.propertytaxcalculator.taxtype.LbbtTax;
+import main.propertytaxcalculator.taxtype.TaxType;
 
 public class TaxFactory {
 

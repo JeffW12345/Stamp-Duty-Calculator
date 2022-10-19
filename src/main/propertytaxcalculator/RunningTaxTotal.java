@@ -1,4 +1,4 @@
-package propertytaxcalculator;
+package main.propertytaxcalculator;
 
 public class RunningTaxTotal {
     private double totalSoFar = 0;

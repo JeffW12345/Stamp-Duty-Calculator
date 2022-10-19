@@ -1,14 +1,11 @@
-package propertytaxcalculator.server;
+package main.propertytaxcalculator.server;
 
 import com.vtence.molecule.Response;
 import com.vtence.molecule.WebServer;
 import com.vtence.molecule.routing.Routes;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.thymeleaf.templateresolver.FileTemplateResolver;
-import propertytaxcalculator.TaxFactory;
-import propertytaxcalculator.tax.TaxNames;
-import propertytaxcalculator.taxtype.TaxType;
+import main.propertytaxcalculator.TaxFactory;
+import main.propertytaxcalculator.tax.TaxNames;
+import main.propertytaxcalculator.taxtype.TaxType;
 
 import java.io.IOException;
 

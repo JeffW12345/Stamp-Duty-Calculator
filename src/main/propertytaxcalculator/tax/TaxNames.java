@@ -1,4 +1,4 @@
-package propertytaxcalculator.tax;
+package main.propertytaxcalculator.tax;
 
 public enum TaxNames {
     LBBT

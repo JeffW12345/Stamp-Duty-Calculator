@@ -1,5 +1,5 @@
-package propertytaxcalculator.taxtype;
-import propertytaxcalculator.tax.TaxBands;
+package main.propertytaxcalculator.taxtype;
+import main.propertytaxcalculator.tax.TaxBands;
 
 public abstract class TaxType {
 

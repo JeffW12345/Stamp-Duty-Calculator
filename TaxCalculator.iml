@@ -10,6 +10,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="junit.jupiter" level="project" />
+    <orderEntry type="library" name="assertj.core" level="project" />
     <orderEntry type="library" name="Maven: com.vtence.molecule:molecule:0.14.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.simpleframework:simple-http:6.0.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.simpleframework:simple-common:6.0.1" level="project" />
@@ -48,7 +50,5 @@
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.30" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring5:3.0.15.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE" level="project" />
-    <orderEntry type="library" name="junit.jupiter" level="project" />
-    <orderEntry type="library" name="assertj.core" level="project" />
   </component>
 </module>

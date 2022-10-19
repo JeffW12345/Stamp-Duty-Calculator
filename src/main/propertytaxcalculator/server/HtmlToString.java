@@ -1,11 +1,8 @@
-package propertytaxcalculator.server;
+package main.propertytaxcalculator.server;
 
-import org.springframework.context.annotation.Bean;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.FileTemplateResolver;
-
-import java.util.Locale;
 
 public class HtmlToString {
     protected String tryAgainHTML() {

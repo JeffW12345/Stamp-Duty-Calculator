@@ -1,7 +1,7 @@
-package propertytaxcalculator;
+package main.propertytaxcalculator;
 
 import com.vtence.molecule.WebServer;
-import propertytaxcalculator.server.ServerController;
+import main.propertytaxcalculator.server.ServerController;
 
 import java.io.IOException;
 

@@ -26,15 +26,19 @@ public class ServerController {
                 String htmlAsStr = "";
                 if(!isNumeric(propertyValue)){
                     htmlAsStr += new HtmlToString().tryAgainHTML();
+                    return Response.ok()
+                            .contentType("text/html; charset=utf-8")
+                            .done(htmlAsStr);
                 }
                 else
                 {
-                    htmlAsStr += new HtmlToString().taxDueHTML(taxType, propertyValue,
-                            Double.toString(taxDue(Double.parseDouble(propertyValue), taxType)));
+                    String message = "Tax type: " + taxType;
+                    message += "\nProperty value: " + propertyValue;
+                    message += "\nTaxable amount: " + Double.toString(taxDue(Double.parseDouble(propertyValue), taxType));
+                    return Response.ok()
+                            .contentType("text/plain; charset=utf-8")
+                            .done(message);
                 }
-                return Response.ok()
-                        .contentType("text/html; charset=utf-8")
-                        .done(htmlAsStr);
             });
         }});
     }

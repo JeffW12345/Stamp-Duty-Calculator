@@ -18,24 +18,6 @@ public class HtmlToString {
         return templateEngine.process("invalid-input", ctx);
     }
 
-    @Bean
-
-    protected String taxDueHTML(String taxType, String propertyValue, String taxDue) {
-        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        Context ctx = new Context(Locale.getDefault());
-        ctx.setVariable("tax-type", taxType);
-        ctx.setVariable("property-value", propertyValue);
-        ctx.setVariable("tax-due", taxDue);
-        FileTemplateResolver resolver = new FileTemplateResolver();
-        resolver.setPrefix("src/main/propertytaxcalculator/resources/templates/");
-        resolver.setSuffix(".html");
-        resolver.setTemplateMode("HTML");
-        resolver.setCacheable(false);
-        resolver.setForceTemplateMode(true);
-        templateEngine.addTemplateResolver(resolver);
-        return templateEngine.process("result", ctx);
-    }
-
     protected String formHTML() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         Context ctx = new Context();

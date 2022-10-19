@@ -3,16 +3,13 @@ package propertytaxcalculator;
 import com.vtence.molecule.Response;
 import com.vtence.molecule.WebServer;
 import com.vtence.molecule.routing.Routes;
+import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
+import org.thymeleaf.templateresolver.FileTemplateResolver;
 import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.TaxType;
-import propertytaxcalculator.resources.templates.*;
-import org.thymeleaf.context.Context;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 public class ServerController {
     public void run(WebServer server) throws IOException {
@@ -20,24 +17,7 @@ public class ServerController {
             get("/").to(
                     request -> Response.ok()
                             .contentType("text/html; charset=utf-8")
-                            .done("<!DOCTYPE html>" +
-                                    "<html>" +
-                                    "<body>" +
-                                    "<h2>" + "Property tax calculator" + "</h2>" +
-                                    "<form enctype='multipart/form-data' action='/' method='post'>\n" +
-                                    "<label for=\"property-value\"> Value of property: </label> <br>" +
-                                    "<input type=\"text\" id=\"fname\" name=\"property-value\">" + "<br>" +
-                                    "<label for=\"tax-type\">" + "Choose a tax type: </label>" +
-                                    "<br>" +
-                                    "<select name=\"tax-type\">" +
-                                    "<option value=\"lbbt\"> Lbbt (Scottish property tax) </option>" +
-                                    "</select>" +
-                                    "<br>" +
-                                    "<br>" +
-                                    "<input type=\"submit\" value=\"Submit\">" +
-                                    "</form>" +
-                                    "</body>" +
-                                    "</html>"));
+                            .done(homePageHTML()));
 
             post("/").to(request -> {
                 String taxType = request.part("tax-type").value();
@@ -76,9 +56,13 @@ public class ServerController {
         }
     }
 
-    public String process() {
+    public String homePageHTML() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         Context ctx = new Context();
+        FileTemplateResolver resolver = new FileTemplateResolver();
+        resolver.setPrefix("src/main/propertytaxcalculator/resources/templates/");
+        resolver.setSuffix(".html");
+        templateEngine.addTemplateResolver(resolver);
         return templateEngine.process("home", ctx);
     }
 

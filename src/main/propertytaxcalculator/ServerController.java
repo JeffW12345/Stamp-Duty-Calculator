@@ -3,10 +3,16 @@ package propertytaxcalculator;
 import com.vtence.molecule.Response;
 import com.vtence.molecule.WebServer;
 import com.vtence.molecule.routing.Routes;
+import org.thymeleaf.spring5.SpringTemplateEngine;
+import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.TaxType;
+import propertytaxcalculator.resources.templates.*;
+import org.thymeleaf.context.Context;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class ServerController {
     public void run(WebServer server) throws IOException {
@@ -69,4 +75,11 @@ public class ServerController {
             return false;
         }
     }
+
+    public String process() {
+        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+        Context ctx = new Context();
+        return templateEngine.process("home", ctx);
+    }
+
 }

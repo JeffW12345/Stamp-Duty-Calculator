@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/HtmlToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/HtmlToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/resources/templates/result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

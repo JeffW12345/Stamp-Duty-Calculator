@@ -25,7 +25,7 @@ public class HtmlToString {
         Context ctx = new Context(Locale.getDefault());
         ctx.setVariable("tax-type", taxType);
         ctx.setVariable("property-value", propertyValue);
-        ctx.setVariable("tax-due", propertyValue);
+        ctx.setVariable("tax-due", taxDue);
         FileTemplateResolver resolver = new FileTemplateResolver();
         resolver.setPrefix("src/main/propertytaxcalculator/resources/templates/");
         resolver.setSuffix(".html");

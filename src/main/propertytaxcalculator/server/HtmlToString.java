@@ -1,8 +1,11 @@
 package propertytaxcalculator.server;
 
+import org.springframework.context.annotation.Bean;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.FileTemplateResolver;
+
+import java.util.Locale;
 
 public class HtmlToString {
     protected String tryAgainHTML() {
@@ -15,16 +18,20 @@ public class HtmlToString {
         return templateEngine.process("invalid-input", ctx);
     }
 
+    @Bean
+
     protected String taxDueHTML(String taxType, String propertyValue, String taxDue) {
-        System.out.println(taxDue);
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        Context ctx = new Context();
+        Context ctx = new Context(Locale.getDefault());
         ctx.setVariable("tax-type", taxType);
         ctx.setVariable("property-value", propertyValue);
         ctx.setVariable("tax-due", propertyValue);
         FileTemplateResolver resolver = new FileTemplateResolver();
         resolver.setPrefix("src/main/propertytaxcalculator/resources/templates/");
         resolver.setSuffix(".html");
+        resolver.setTemplateMode("HTML");
+        resolver.setCacheable(false);
+        resolver.setForceTemplateMode(true);
         templateEngine.addTemplateResolver(resolver);
         return templateEngine.process("result", ctx);
     }

@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/invalid-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/HtmlToString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CalculationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FactoryTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/ServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/propertytaxcalculator/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/propertytaxcalculator/resources/templates/result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>

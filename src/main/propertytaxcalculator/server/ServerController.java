@@ -1,4 +1,4 @@
-package propertytaxcalculator;
+package propertytaxcalculator.server;
 
 import com.vtence.molecule.Response;
 import com.vtence.molecule.WebServer;
@@ -6,6 +6,7 @@ import com.vtence.molecule.routing.Routes;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.FileTemplateResolver;
+import propertytaxcalculator.TaxFactory;
 import propertytaxcalculator.tax.TaxNames;
 import propertytaxcalculator.taxtype.TaxType;
 
@@ -17,26 +18,27 @@ public class ServerController {
             get("/").to(
                     request -> Response.ok()
                             .contentType("text/html; charset=utf-8")
-                            .done(homePageHTML()));
+                            .done(new HtmlToString().formHTML()));
 
             post("/").to(request -> {
                 String taxType = request.part("tax-type").value();
                 String propertyValue = request.part("property-value").value();
-                String str = "";
+                String htmlAsStr = "";
                 if(!isNumeric(propertyValue)){
-                    str += ("You've not given me a number! Press the back button and try again.");
+                    htmlAsStr += new HtmlToString().tryAgainHTML();
                 }
                 else
                 {
-                    str += "Value of property: " + propertyValue + "\n";
-                    str += "Tax amount: " + taxDue(Double.parseDouble(propertyValue), taxType);
+                    htmlAsStr += new HtmlToString().taxDueHTML(taxType, propertyValue,
+                            Double.toString(taxDue(Double.parseDouble(propertyValue), taxType)));
                 }
                 return Response.ok()
-                        .contentType("text/plain; charset=utf-8")
-                        .done(str);
+                        .contentType("text/html; charset=utf-8")
+                        .done(htmlAsStr);
             });
         }});
     }
+
     private double taxDue(double propertyValue, String taxType) {
         if(taxType.equals("lbbt")){
             TaxType tax = new TaxFactory().create(TaxNames.LBBT, propertyValue);
@@ -56,14 +58,6 @@ public class ServerController {
         }
     }
 
-    public String homePageHTML() {
-        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        Context ctx = new Context();
-        FileTemplateResolver resolver = new FileTemplateResolver();
-        resolver.setPrefix("src/main/propertytaxcalculator/resources/templates/");
-        resolver.setSuffix(".html");
-        templateEngine.addTemplateResolver(resolver);
-        return templateEngine.process("home", ctx);
-    }
+
 
 }

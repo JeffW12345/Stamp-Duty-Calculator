@@ -1,7 +1,4 @@
-package main.propertytaxcalculator.tax;
-
-import main.propertytaxcalculator.RunningTaxTotal;
-import main.propertytaxcalculator.TaxableAmountProcessed;
+package main.propertytaxcalculator.taxcalculations;
 
 import java.util.ArrayList;
 

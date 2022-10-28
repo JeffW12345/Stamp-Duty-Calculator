@@ -3,9 +3,9 @@ package main.propertytaxcalculator.server;
 import com.vtence.molecule.Response;
 import com.vtence.molecule.WebServer;
 import com.vtence.molecule.routing.Routes;
-import main.propertytaxcalculator.TaxFactory;
+import main.propertytaxcalculator.tax.TaxFactory;
 import main.propertytaxcalculator.tax.TaxNames;
-import main.propertytaxcalculator.taxtype.TaxType;
+import main.propertytaxcalculator.tax.TaxType;
 
 import java.io.IOException;
 

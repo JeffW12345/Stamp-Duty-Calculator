@@ -6,21 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaxCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TaxCalculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/InvalidTaxSpecified.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/InvalidTaxSpecified.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/RunningTaxTotal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/RunningTaxTotal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxableAmountProcessed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/TaxableAmountProcessed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/HtmlToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/HtmlToString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/server/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxBand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxBand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxBands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxBands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/tax/TaxNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/LbbtTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/LbbtTax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/TaxType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/taxtype/TaxType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/CalculationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CalculationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/FactoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/FactoryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,31 +38,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-18",
-    "last_opened_file_path": "C:/Users/Jeff.Waters/IdeaProjects/Stamp-Duty-Calculator",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jeff.Waters/IdeaProjects/Stamp-Duty-Calculator&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Java-Stamp-Duty-Calculator\src\main\propertytaxcalculator\resources\templates" />
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Java-Stamp-Duty-Calculator\src\main\propertytaxcalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FactoryTests">
+  <component name="RunManager" selected="Application.main.propertytaxcalculator.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="propertytaxcalculator.Main" />
       <module name="TaxCalculator" />
@@ -96,7 +81,7 @@
       <module name="TaxCalculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.propertytaxcalculator.*" />
+          <option name="PATTERN" value="main.propertytaxcalculator.tax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main.propertytaxcalculator.Main" />
         <item itemvalue="JUnit.FactoryTests" />
         <item itemvalue="JUnit.CalculationTests" />
-        <item itemvalue="Application.main.propertytaxcalculator.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

@@ -1,4 +1,4 @@
-package main.propertytaxcalculator;
+package main.propertytaxcalculator.taxcalculations;
 
 public class TaxableAmountProcessed {
 

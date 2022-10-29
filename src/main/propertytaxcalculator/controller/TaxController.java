@@ -48,7 +48,6 @@ public class TaxController {
         return amount == 0 ? "0.00" : df.format(amount);
     }
 
-    // Taken from https://stackoverflow.com/questions/1102891/how-to-check-if-a-string-is-numeric-in-java
     private boolean isNumeric(String name) {
         try {
             Double.parseDouble(name);

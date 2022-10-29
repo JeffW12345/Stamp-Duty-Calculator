@@ -2,6 +2,7 @@ package main.propertytaxcalculator.models.factory;
 
 import main.propertytaxcalculator.models.LbbtTax;
 import main.propertytaxcalculator.models.TaxNames;
+import main.propertytaxcalculator.models.TaxType;
 
 public class TaxFactory {
 

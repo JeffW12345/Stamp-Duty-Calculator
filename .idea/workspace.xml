@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/ServerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ServerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/LbbtTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/LbbtTax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/factory/TaxFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/factory/TaxFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/factory/TaxType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/TaxType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CalculationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CalculationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +90,7 @@
       <module name="TaxCalculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.propertytaxcalculator.models.factory.*" />
+          <option name="PATTERN" value="main.propertytaxcalculator.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,10 +98,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaxCalculator" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FactoryTests" />
+      <option name="MAIN_CLASS_NAME" value="CalculationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main.propertytaxcalculator.Main" />
+        <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="JUnit.ServerTests" />
         <item itemvalue="JUnit.TaxControllerHelperMethodTests" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FactoryTests" />
       </list>
     </recent_temporary>
   </component>

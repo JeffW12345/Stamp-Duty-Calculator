@@ -26,7 +26,6 @@ public class TaxController {
         return "home.html";
     }
 
-
     @RequestMapping(path = "/", method = RequestMethod.POST)
     public String home(
             @RequestParam String taxType,

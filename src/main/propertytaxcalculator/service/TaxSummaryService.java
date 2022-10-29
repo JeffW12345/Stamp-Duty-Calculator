@@ -3,7 +3,7 @@ package main.propertytaxcalculator.service;
 import main.propertytaxcalculator.models.TaxNames;
 import main.propertytaxcalculator.models.factory.InvalidTaxSpecified;
 import main.propertytaxcalculator.models.factory.TaxFactory;
-import main.propertytaxcalculator.models.factory.TaxType;
+import main.propertytaxcalculator.models.TaxType;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
@@ -24,8 +24,7 @@ public class TaxSummaryService {
         this.taxName = taxType;
         double propertyValueAsDouble = Double.parseDouble(propertyValue);
         TaxType taxObject = new TaxFactory().create(taxEnum(taxType), propertyValueAsDouble);
-        taxObject.calculate();
-        this.taxAmount = taxObject.getTaxDue();
+        this.taxAmount = taxObject.taxDue();
     }
     private TaxNames taxEnum(String taxType) throws Exception {
         if(taxType.equals("lbbt")){

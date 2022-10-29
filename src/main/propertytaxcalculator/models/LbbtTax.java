@@ -1,6 +1,5 @@
 package main.propertytaxcalculator.models;
 
-import main.propertytaxcalculator.models.factory.TaxType;
 import main.propertytaxcalculator.taxcalculations.TaxBand;
 
 public class LbbtTax extends TaxType {

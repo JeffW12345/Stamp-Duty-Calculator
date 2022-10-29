@@ -2,7 +2,6 @@ package main.propertytaxcalculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 

@@ -1,4 +1,4 @@
-package main.propertytaxcalculator.models.factory;
+package main.propertytaxcalculator.models;
 import main.propertytaxcalculator.taxcalculations.TaxBands;
 
 public abstract class TaxType {
@@ -14,13 +14,9 @@ public abstract class TaxType {
         setTaxThresholds();
     }
 
-    public double getTaxDue() {
-        return taxDue;
-    }
-
     protected abstract void setTaxThresholds();
 
-    public void calculate() {
-        taxDue = taxBands.calculateTax(propertyValue);
+    public double taxDue() {
+        return taxBands.calculateTax(propertyValue);
     }
 }

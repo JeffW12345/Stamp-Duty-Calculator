@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Stamp duty calculator</title>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-
 </head>
 <body>
-<h2> Property tax calculator" </h2>
+<h2> Property tax calculator </h2>
 <form enctype="multipart/form-data" action="/" method="post">
-    <label for="property-value"> Value of property: </label> <br>
-    <input type="text" id="property-value" name="property-value"> <br>
-    <label for="tax-type" id="tax-type">  Choose a tax type: </label>
+    <label for="propertyValue"> Value of property: </label> <br>
+    <input type="text" id="propertyValue" name="propertyValue"> <br>
+    <label for="taxType" id="taxType">  Choose a tax type: </label>
     <br>
-    <select name="tax-type">
+    <select name="taxType">
         <option value="lbbt"> Lbbt (Scottish property tax) </option>"
     </select>
     <br>
@@ -22,32 +20,11 @@
     </div>
 </form>
 
-<div id="result"></div>
-<script>
-            /* attach a submit handler to the form */
-            $("#searchForm").submit(function(event) {
-
-                /* stop form from submitting normally */
-                event.preventDefault();
-
-                /* get some values from elements on the page: */
-                var $form = $(this),
-                    term = $form.find('input[name="s"]').val(),
-                    url = $form.attr('action');
-
-                /* Send the data using post */
-  var posting = $.post(url, {
-    name: $('#name').val(),
-    name2: $('#name2').val()
-  });
-
-                /* Put the results in a div */
-                posting.done(function(data) {
-                    var content = $(data).find('#content');
-                    $("#result").empty().append(content);
-                });
-            });
-        </script>
+<div id = "results">
+    <p>Tax type: <span th:text="${outputTaxType}"></span></p>
+    <p>Property value: £<span th:text="${outputPropertyValue}"></span></p>
+    <p>Tax payable: £<span th:text="${outputTaxAmount}"></span></p>
+</div>
 
 </body>
 </html>

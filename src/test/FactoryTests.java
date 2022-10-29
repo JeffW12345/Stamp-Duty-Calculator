@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
-import main.propertytaxcalculator.tax.TaxFactory;
-import main.propertytaxcalculator.tax.TaxNames;
-import main.propertytaxcalculator.tax.LbbtTax;
+import main.propertytaxcalculator.models.factory.TaxFactory;
+import main.propertytaxcalculator.models.TaxNames;
+import main.propertytaxcalculator.models.LbbtTax;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

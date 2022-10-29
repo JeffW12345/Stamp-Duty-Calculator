@@ -5,7 +5,6 @@ public class TaxBand {
     private double from;
     private double to;
     private double rate;
-
     private double size;
 
     public TaxBand(double from, double to, double rate) {

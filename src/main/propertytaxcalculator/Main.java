@@ -3,10 +3,14 @@ package main.propertytaxcalculator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 @SpringBootApplication
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
         SpringApplication.run(Main.class, args);
+        System.out.println("Click on " + new URL("http://127.0.0.1:8080/"));
     }
 }

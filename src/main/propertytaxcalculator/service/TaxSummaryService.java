@@ -1,6 +1,7 @@
 package main.propertytaxcalculator.service;
 
 import main.propertytaxcalculator.models.TaxNames;
+import main.propertytaxcalculator.models.factory.InvalidTaxSpecified;
 import main.propertytaxcalculator.models.factory.TaxFactory;
 import main.propertytaxcalculator.models.factory.TaxType;
 import org.springframework.context.annotation.Scope;
@@ -30,6 +31,6 @@ public class TaxSummaryService {
         if(taxType.equals("lbbt")){
             return TaxNames.LBBT;
         }
-        throw new Exception("Invalid tax type");
+        throw new InvalidTaxSpecified("Invalid tax specified");
     }
 }

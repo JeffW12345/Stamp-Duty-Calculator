@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TaxControllerHelperMethodTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TaxControllerHelperMethodTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +66,7 @@
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Java-Stamp-Duty-Calculator\src\main\propertytaxcalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main.propertytaxcalculator.Main">
+  <component name="RunManager" selected="JUnit.TaxControllerHelperMethodTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="propertytaxcalculator.Main" />
       <module name="TaxCalculator" />
@@ -132,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main.propertytaxcalculator.Main" />
         <item itemvalue="JUnit.TaxControllerHelperMethodTests" />
+        <item itemvalue="Application.main.propertytaxcalculator.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.FactoryTests" />
         <item itemvalue="JUnit.CalculationTests" />

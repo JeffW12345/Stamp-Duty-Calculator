@@ -19,7 +19,6 @@ public class TaxController {
 
     @RequestMapping("/")
     public String viewForm(Model model) {
-        model.addAttribute("outputTaxType", "");
         return "home.html";
     }
 

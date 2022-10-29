@@ -20,9 +20,6 @@ public class TaxController {
     @RequestMapping("/")
     public String viewForm(Model model) {
         model.addAttribute("outputTaxType", "");
-        model.addAttribute("outputPropertyValue", "");
-        model.addAttribute("outputTaxAmount", "");
-        model.addAttribute("valueProvided", false);
         return "home.html";
     }
 
@@ -48,9 +45,9 @@ public class TaxController {
         return amount == 0 ? "0.00" : df.format(amount);
     }
 
-    private boolean isNumeric(String name) {
+    private boolean isNumeric(String number) {
         try {
-            Double.parseDouble(name);
+            Double.parseDouble(number);
             return true;
         } catch(NumberFormatException e){
             return false;

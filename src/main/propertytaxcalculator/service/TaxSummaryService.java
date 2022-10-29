@@ -23,10 +23,9 @@ public class TaxSummaryService {
     public void process(String taxType, String propertyValue) throws Exception {
         this.taxName = taxType;
         double propertyValueAsDouble = Double.parseDouble(propertyValue);
-        TaxType taxObject = new TaxFactory().create(taxEnum(taxType), propertyValueAsDouble);
-        this.taxAmount = taxObject.taxDue();
+        this.taxAmount = new TaxFactory().create(taxEnum(taxType), propertyValueAsDouble).taxDue();
     }
-    private TaxNames taxEnum(String taxType) throws Exception {
+    private TaxNames taxEnum(String taxType) {
         if(taxType.equals("lbbt")){
             return TaxNames.LBBT;
         }

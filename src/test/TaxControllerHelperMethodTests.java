@@ -16,21 +16,24 @@ public class TaxControllerHelperMethodTests {
     }
 
     @Test
-    public void isNumericReturnsTrueWithDecimal() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public void isNumericReturnsTrueWithDecimal() throws NoSuchMethodException, InvocationTargetException,
+            IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("isNumeric", String.class);
         method.setAccessible(true);
         TaxController taxController = new TaxController(new TaxSummaryService());
         assertTrue((boolean) method.invoke(taxController, "2.1"));
     }
     @Test
-    public void isNumericReturnsTrueWithNegativeNumber() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public void isNumericReturnsTrueWithNegativeNumber() throws NoSuchMethodException, InvocationTargetException,
+            IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("isNumeric", String.class);
         method.setAccessible(true);
         TaxController taxController = new TaxController(new TaxSummaryService());
         assertTrue((boolean) method.invoke(taxController, "-2.1"));
     }
     @Test
-    public void isNumericReturnsFalseWithAlphaNumeric() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public void isNumericReturnsFalseWithAlphaNumeric() throws NoSuchMethodException, InvocationTargetException,
+            IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("isNumeric", String.class);
         method.setAccessible(true);
         TaxController taxController = new TaxController(new TaxSummaryService());
@@ -38,7 +41,8 @@ public class TaxControllerHelperMethodTests {
     }
 
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForZero() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public void formatAsCurrencyReturnsCorrectlyForZero() throws NoSuchMethodException, InvocationTargetException,
+            IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
         TaxController taxController = new TaxController(new TaxSummaryService());
@@ -53,7 +57,8 @@ public class TaxControllerHelperMethodTests {
     }
 
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForNegativeNumber() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public void formatAsCurrencyReturnsCorrectlyForNegativeNumber() throws NoSuchMethodException,
+            InvocationTargetException, IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
         TaxController taxController = new TaxController(new TaxSummaryService());
@@ -61,11 +66,11 @@ public class TaxControllerHelperMethodTests {
     }
 
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForHundred() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public void formatAsCurrencyReturnsCorrectlyForHundred() throws NoSuchMethodException, InvocationTargetException,
+            IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
         TaxController taxController = new TaxController(new TaxSummaryService());
         assertEquals("100.00", method.invoke(taxController, "100"));
     }
-
 }

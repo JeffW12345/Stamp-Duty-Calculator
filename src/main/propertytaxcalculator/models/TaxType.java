@@ -11,9 +11,7 @@ public abstract class TaxType {
         this.propertyValue = propertyValue;
         setTaxThresholds();
     }
-
     protected abstract void setTaxThresholds();
-
     public double taxDue() {
         return taxBands.calculateTax(propertyValue);
     }

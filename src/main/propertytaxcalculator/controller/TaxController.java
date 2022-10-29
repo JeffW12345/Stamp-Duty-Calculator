@@ -44,9 +44,9 @@ public class TaxController {
     }
 
     private String formatAsCurrency(String renderToCurrency) {
-        DecimalFormat df = new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("#,###.00");
         double amount = Double.parseDouble(renderToCurrency);
-        return df.format(amount);
+        return amount == 0 ? "0.00" : df.format(amount);
     }
 
     // Taken from https://stackoverflow.com/questions/1102891/how-to-check-if-a-string-is-numeric-in-java

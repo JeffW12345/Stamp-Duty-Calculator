@@ -29,8 +29,6 @@ public class ServerTests {
 
     private ConfigurableApplicationContext context;
 
-    // TODO - Tests for invalid POST and GET requests
-
     @Test
     public void validGetRequestReturnsCorrectStatusCode() throws IOException {
         context = SpringApplication.run(Main.class);
@@ -57,11 +55,9 @@ public class ServerTests {
     @Test
     public void validPostRequestReturnsCorrectStatusCode() throws IOException {
         context = SpringApplication.run(Main.class);
-        HttpClient httpclient;
-        HttpPost httpPost;
         ArrayList<NameValuePair> postParameters;
-        httpclient = HttpClientBuilder.create().build();;
-        httpPost = new HttpPost("http://127.0.0.1:8080/");
+        HttpClient httpclient = HttpClientBuilder.create().build();;
+        HttpPost httpPost = new HttpPost("http://127.0.0.1:8080/");
         postParameters = new ArrayList<>();
         postParameters.add(new BasicNameValuePair("propertyValue", "1000000"));
         postParameters.add(new BasicNameValuePair("taxType", "lbbt"));
@@ -69,17 +65,63 @@ public class ServerTests {
         HttpResponse response = httpclient.execute(httpPost);
         int statusCode = response.getStatusLine().getStatusCode();
         context.close();
-        Assertions.assertEquals(statusCode, (HttpStatus.SC_OK));
+        Assertions.assertEquals(HttpStatus.SC_OK, statusCode);
+    }
+
+    @Test
+    public void invalidPostRequestReturnsCorrectStatusCode() throws IOException {
+        context = SpringApplication.run(Main.class);
+        ArrayList<NameValuePair> postParameters;
+        HttpClient httpclient = HttpClientBuilder.create().build();;
+        HttpPost httpPost = new HttpPost("http://127.0.0.1:8080/");
+        postParameters = new ArrayList<>();
+        postParameters.add(new BasicNameValuePair("propertyValue", "1000000"));
+        postParameters.add(new BasicNameValuePair("taxType", "random"));
+        httpPost.setEntity(new UrlEncodedFormEntity(postParameters, "UTF-8"));
+        HttpResponse response = httpclient.execute(httpPost);
+        int statusCode = response.getStatusLine().getStatusCode();
+        context.close();
+        Assertions.assertEquals(500, statusCode);
     }
 
     @Test
     public void validGetRequestResultsInValidJSON() throws IOException {
         String json = scrape("http://127.0.0.1:8080/search?propertyValue=1000000&taxType=lbbt");
-        System.out.println("JSON" + json);
-        Gson gson = new GsonBuilder().create();
-        TaxSummaryService tss = gson.fromJson(json, TaxSummaryService.class);
+        TaxSummaryService tss = new GsonBuilder().create().fromJson(json, TaxSummaryService.class);
         Assertions.assertEquals("78,350.00", tss.getTaxAmount());
     }
+
+    @Test
+    public void invalidGetRequestResultsInNoTaxInfo() throws IOException {
+        String json = scrape("http://127.0.0.1:8080/search?propertyValue=1000000&taxType=none");
+        TaxSummaryService tss = new GsonBuilder().create().fromJson(json, TaxSummaryService.class);
+        Assertions.assertNull(tss.getTaxAmount());
+    }
+
+    @Test
+    public void invalidGetRequestResultsIn500Error() throws IOException {
+        String url = "http://127.0.0.1:8080/search?propertyValue=1000000&taxType=none";
+        ConfigurableApplicationContext context = SpringApplication.run(Main.class);
+        HttpClient client = HttpClientBuilder.create().build();
+        HttpGet requestGet = new HttpGet(url);
+        HttpResponse response = client.execute(requestGet);
+        int statusCode = response.getStatusLine().getStatusCode();
+        context.close();
+        Assertions.assertEquals(500, statusCode);
+    }
+
+    @Test
+    public void validGetRequestResultsIn200StatusCode() throws IOException {
+        String url = "http://127.0.0.1:8080/search?propertyValue=1000000&taxType=lbbt";
+        ConfigurableApplicationContext context = SpringApplication.run(Main.class);
+        HttpClient client = HttpClientBuilder.create().build();
+        HttpGet requestGet = new HttpGet(url);
+        HttpResponse response = client.execute(requestGet);
+        int statusCode = response.getStatusLine().getStatusCode();
+        context.close();
+        Assertions.assertEquals(200, statusCode);
+    }
+
 
     private String scrape(String urlToProcess) throws IOException {
         ConfigurableApplicationContext context = SpringApplication.run(Main.class);
@@ -90,8 +132,6 @@ public class ServerTests {
         context.close();
         return EntityUtils.toString(entity, "UTF-8");
     }
-
-
 }
 
 

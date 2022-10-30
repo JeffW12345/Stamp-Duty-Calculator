@@ -15,11 +15,12 @@ public abstract class TaxType {
     }
     protected abstract void setTaxThresholds();
 
-    public double taxDue() {
+    private double taxDue() {
         return taxBands.calculateTax(propertyValue);
     }
 
     public String taxDueFormattedString(){
         return new NumberFormat().addCommasAndPence(taxDue() + "");
     }
+
 }

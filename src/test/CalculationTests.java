@@ -14,36 +14,35 @@ public class CalculationTests {
     @Test
     public void propertyValZeroReturnsZeroLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 0);
-        assertEquals(0, taxType.taxDue());
+        assertEquals("0.00", taxType.taxDueFormattedString());
     }
 
     @Test
     public void propertyValNegativeReturnsZeroLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, -1);
-        assertEquals(0, taxType.taxDue());
+        assertEquals("0.00", taxType.taxDueFormattedString());
     }
     // Tax is 0 % <= 145000
     @Test
     public void propertyVal145000ReturnsZeroLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 145000);
-        assertEquals(0, taxType.taxDue());
+        assertEquals("0.00", taxType.taxDueFormattedString());
     }
 
     @Test
     public void propertyVal146000Returns20PoundsLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 146000);
-        assertEquals(20, taxType.taxDue());
+        assertEquals("20.00", taxType.taxDueFormattedString());
     }
 
     @Test
     public void propertyVal199999point99Returns1100PoundsLbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 199999.99);
-        assertEquals(1100, taxType.taxDue());
+        assertEquals("1,100.00", taxType.taxDueFormattedString());
     }
     @Test
     public void propertyValuedAMillionReturns78350Lbbt(){
         taxType = new TaxFactory().create(TaxNames.LBBT, 1000000);
-        assertEquals(78350, taxType.taxDue());
+        assertEquals("78,350.00", taxType.taxDueFormattedString());
     }
-
 }

@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import java.text.DecimalFormat;
 
 @Controller
 @Scope("prototype")
@@ -33,15 +32,19 @@ public class TaxController {
         taxSummaryService.process(taxType, propertyValue);
         model.addAttribute("valueProvided", true);
         model.addAttribute("outputTaxType", taxSummaryService.getTaxName());
-        model.addAttribute("outputPropertyValue", formatAsCurrency(propertyValue));
-        model.addAttribute("outputTaxAmount", formatAsCurrency(taxSummaryService.getTaxAmount() + ""));
+        model.addAttribute("outputPropertyValue", taxSummaryService.getPropertyValue());
+        model.addAttribute("outputTaxAmount", taxSummaryService.getTaxAmount());
         return "home.html";
     }
 
-    private String formatAsCurrency(String renderToCurrency) {
-        DecimalFormat df = new DecimalFormat("#,###.00");
-        double amount = Double.parseDouble(renderToCurrency);
-        return amount == 0 ? "0.00" : df.format(amount);
+    @GetMapping("/search")
+    @ResponseBody
+    public TaxSummaryService search(
+            @RequestParam(required = true) String taxType,
+            @RequestParam(required = true) String propertyValue,
+            Model model) throws Exception {
+        taxSummaryService.process(taxType, propertyValue);
+        return taxSummaryService;
     }
 
     private boolean isNumeric(String number) {

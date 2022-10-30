@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TaxControllerHelperMethodTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/HelperMethodTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,19 +102,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelperMethodTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaxCalculator" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ServerTests" />
+      <option name="MAIN_CLASS_NAME" value="HelperMethodTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxControllerHelperMethodTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaxCalculator" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaxControllerHelperMethodTests" />
+      <option name="MAIN_CLASS_NAME" value="ServerTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,9 +133,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaxControllerHelperMethodTests" />
         <item itemvalue="JUnit.CalculationTests" />
         <item itemvalue="JUnit.ServerTests" />
-        <item itemvalue="JUnit.TaxControllerHelperMethodTests" />
       </list>
     </recent_temporary>
   </component>

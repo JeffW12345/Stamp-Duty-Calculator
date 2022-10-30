@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TaxControllerHelperMethodTests {
+public class HelperMethodTests {
     @Test
     public void isNumericReturnsTrueWithInteger() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         Method method = TaxController.class.getDeclaredMethod("isNumeric", String.class);
@@ -43,34 +43,34 @@ public class TaxControllerHelperMethodTests {
     @Test
     public void formatAsCurrencyReturnsCorrectlyForZero() throws NoSuchMethodException, InvocationTargetException,
             IllegalAccessException {
-        Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
+        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
-        TaxController taxController = new TaxController(new TaxSummaryService());
-        assertEquals("0.00", method.invoke(taxController, "0"));
+        TaxSummaryService tss = new TaxSummaryService();
+        assertEquals("0.00", method.invoke(tss, "0"));
     }
     @Test
     public void formatAsCurrencyReturnsCorrectlyForAMillion() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
+        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
-        TaxController taxController = new TaxController(new TaxSummaryService());
-        assertEquals("1,000,000.00", method.invoke(taxController, "1000000"));
+        TaxSummaryService tss = new TaxSummaryService();
+        assertEquals("1,000,000.00", method.invoke(tss, "1000000"));
     }
 
     @Test
     public void formatAsCurrencyReturnsCorrectlyForNegativeNumber() throws NoSuchMethodException,
             InvocationTargetException, IllegalAccessException {
-        Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
+        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
-        TaxController taxController = new TaxController(new TaxSummaryService());
-        assertEquals("-1,000,000.00", method.invoke(taxController, "-1000000"));
+        TaxSummaryService tss = new TaxSummaryService();
+        assertEquals("-1,000,000.00", method.invoke(tss, "-1000000"));
     }
 
     @Test
     public void formatAsCurrencyReturnsCorrectlyForHundred() throws NoSuchMethodException, InvocationTargetException,
             IllegalAccessException {
-        Method method = TaxController.class.getDeclaredMethod("formatAsCurrency", String.class);
+        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
         method.setAccessible(true);
-        TaxController taxController = new TaxController(new TaxSummaryService());
-        assertEquals("100.00", method.invoke(taxController, "100"));
+        TaxSummaryService tss = new TaxSummaryService();
+        assertEquals("100.00", method.invoke(tss, "100"));
     }
 }

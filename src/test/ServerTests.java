@@ -1,13 +1,17 @@
 import main.propertytaxcalculator.Main;
 import main.propertytaxcalculator.service.TaxSummaryService;
+
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.SpringApplication;
@@ -25,6 +29,8 @@ public class ServerTests {
 
     private ConfigurableApplicationContext context;
 
+    // TODO - Tests for invalid POST and GET requests
+    
     @Test
     public void validGetRequestReturnsCorrectStatusCode() throws IOException {
         context = SpringApplication.run(Main.class);
@@ -68,25 +74,21 @@ public class ServerTests {
 
     @Test
     public void validGetRequestResultsInValidJSON() throws IOException {
-        ConfigurableApplicationContext ctx = SpringApplication.run(Main.class);
         String json = scrape("http://127.0.0.1:8080/search?propertyValue=1000000&taxType=lbbt");
+        System.out.println("JSON" + json);
         Gson gson = new GsonBuilder().create();
         TaxSummaryService tss = gson.fromJson(json, TaxSummaryService.class);
-        context.close();
         Assertions.assertEquals("78,350.00", tss.getTaxAmount());
-        // TODO - Work out how to overcome: Web server failed to start. Port 8080 was already in use.
-        // TODO - SpringApplication.exit(context) doesn't work. Maybe try selecting different port each time with args?
     }
 
     private String scrape(String urlToProcess) throws IOException {
-        ConfigurableApplicationContext ctx = SpringApplication.run(Main.class);
-        URL url = new URL(urlToProcess);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
-        String str = "";
-        while(reader.readLine() != null){
-            str += reader.readLine();
-        }
-        return str;
+        ConfigurableApplicationContext context = SpringApplication.run(Main.class);
+        HttpClient client = HttpClientBuilder.create().build();
+        HttpGet requestGet = new HttpGet(urlToProcess);
+        HttpResponse response = client.execute(requestGet);
+        HttpEntity entity = response.getEntity();
+        context.close();
+        return EntityUtils.toString(entity, "UTF-8");
     }
 
 

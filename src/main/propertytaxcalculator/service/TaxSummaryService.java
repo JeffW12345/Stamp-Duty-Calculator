@@ -42,7 +42,7 @@ public class TaxSummaryService {
         throw new InvalidTaxSpecified("Invalid tax specified");
     }
 
-    public String formatAsCurrency(String renderToCurrency) {
+    private String formatAsCurrency(String renderToCurrency) {
         DecimalFormat df = new DecimalFormat("#,###.00");
         double amount = Double.parseDouble(renderToCurrency);
         return amount == 0 ? "0.00" : df.format(amount);

@@ -1,4 +1,5 @@
 import main.propertytaxcalculator.controller.TaxController;
+import main.propertytaxcalculator.numberformat.NumberFormat;
 import main.propertytaxcalculator.service.TaxSummaryService;
 import org.junit.Test;
 import java.lang.reflect.InvocationTargetException;
@@ -41,36 +42,23 @@ public class HelperMethodTests {
     }
 
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForZero() throws NoSuchMethodException, InvocationTargetException,
-            IllegalAccessException {
-        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
-        method.setAccessible(true);
-        TaxSummaryService tss = new TaxSummaryService();
-        assertEquals("0.00", method.invoke(tss, "0"));
+    public void addCommasAndPenceReturnsCorrectlyForZero() {
+        assertEquals("0.00", new NumberFormat().addCommasAndPence("0"));
     }
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForAMillion() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
-        method.setAccessible(true);
-        TaxSummaryService tss = new TaxSummaryService();
-        assertEquals("1,000,000.00", method.invoke(tss, "1000000"));
+    public void addCommasAndPenceReturnsCorrectlyForAMillion() {
+
+        assertEquals("1,000,000.00", new NumberFormat().addCommasAndPence("1000000"));
     }
 
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForNegativeNumber() throws NoSuchMethodException,
-            InvocationTargetException, IllegalAccessException {
-        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
-        method.setAccessible(true);
-        TaxSummaryService tss = new TaxSummaryService();
-        assertEquals("-1,000,000.00", method.invoke(tss, "-1000000"));
+    public void addCommasAndPenceReturnsCorrectlyForNegativeNumber() {
+
+        assertEquals("-1,000,000.00", new NumberFormat().addCommasAndPence("-1000000"));
     }
 
     @Test
-    public void formatAsCurrencyReturnsCorrectlyForHundred() throws NoSuchMethodException, InvocationTargetException,
-            IllegalAccessException {
-        Method method = TaxSummaryService.class.getDeclaredMethod("formatAsCurrency", String.class);
-        method.setAccessible(true);
-        TaxSummaryService tss = new TaxSummaryService();
-        assertEquals("100.00", method.invoke(tss, "100"));
+    public void addCommasAndPenceReturnsCorrectlyForHundred()  {
+        assertEquals("100.00", new NumberFormat().addCommasAndPence("100.00"));
     }
 }

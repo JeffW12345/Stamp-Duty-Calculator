@@ -1,4 +1,6 @@
 package main.propertytaxcalculator.models;
+
+import main.propertytaxcalculator.numberformat.NumberFormat;
 import main.propertytaxcalculator.taxcalculations.TaxBands;
 
 public abstract class TaxType {
@@ -12,7 +14,12 @@ public abstract class TaxType {
         setTaxThresholds();
     }
     protected abstract void setTaxThresholds();
+
     public double taxDue() {
         return taxBands.calculateTax(propertyValue);
+    }
+
+    public String taxDueFormattedString(){
+        return new NumberFormat().addCommasAndPence(taxDue() + "");
     }
 }

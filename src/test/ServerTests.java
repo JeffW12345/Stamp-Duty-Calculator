@@ -30,7 +30,7 @@ public class ServerTests {
     private ConfigurableApplicationContext context;
 
     // TODO - Tests for invalid POST and GET requests
-    
+
     @Test
     public void validGetRequestReturnsCorrectStatusCode() throws IOException {
         context = SpringApplication.run(Main.class);

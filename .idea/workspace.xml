@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/numberformat/NumberFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/TaxType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/TaxType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/HelperMethodTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/HelperMethodTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/ServerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ServerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +68,7 @@
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Java-Stamp-Duty-Calculator\src\main\propertytaxcalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ServerTests">
+  <component name="RunManager" selected="Application.main.propertytaxcalculator.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="propertytaxcalculator.Main" />
       <module name="TaxCalculator" />
@@ -131,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ServerTests" />
         <item itemvalue="JUnit.TaxControllerHelperMethodTests" />
+        <item itemvalue="JUnit.ServerTests" />
         <item itemvalue="JUnit.CalculationTests" />
       </list>
     </recent_temporary>

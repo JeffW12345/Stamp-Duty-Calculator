@@ -6,7 +6,7 @@ If you tell enter the value of a property, it will tell you the amount of LBBT (
 
 Runs on localhost: http://127.0.0.1:8080/
 
-Also contains a dynamic GET endpoing that returns JSON, accessable using taxName and propertyValue parameters: /search/:propertyValue/:taxType
+Also contains a dynamic GET endpoint that returns JSON, accessable using taxName and propertyValue parameters: /search/:propertyValue/:taxType
 
 For example http://127.0.0.1:8080/search?propertyValue=1000000&taxType=lbbt results in:
 

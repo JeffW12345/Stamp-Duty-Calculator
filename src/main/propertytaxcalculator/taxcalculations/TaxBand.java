@@ -14,11 +14,11 @@ public class TaxBand {
         size = to - from;
     }
 
-    public void updateRunningTotal(double propertyValue, RunningTaxTotal runningTaxTotal) {
+    protected void updateRunningTotal(double propertyValue, RunningTaxTotal runningTaxTotal) {
         runningTaxTotal.add(Math.round(taxableInThisBand(propertyValue) * rate * 100.0) / 100.0);
     }
 
-    public double taxableInThisBand(double propertyValue) {
+    private double taxableInThisBand(double propertyValue) {
         if(propertyValue < from) return 0;
         if(propertyValue >= from & propertyValue < to){
             return propertyValue - from;
@@ -26,7 +26,7 @@ public class TaxBand {
         return to - from;
     }
 
-    public void updateTaxProcessed(double propertyValue, TaxableAmountProcessed taxableAmountProcessed){
+    protected void updateTaxProcessed(double propertyValue, TaxableAmountProcessed taxableAmountProcessed){
         taxableAmountProcessed.add(taxableInThisBand(propertyValue));
     }
 }

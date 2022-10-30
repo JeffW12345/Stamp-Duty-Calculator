@@ -2,10 +2,10 @@ package main.propertytaxcalculator.taxcalculations;
 
 public class RunningTaxTotal {
     private double totalSoFar = 0;
-    public double getTotalSoFar() {
+    protected double getTotalSoFar() {
         return totalSoFar;
     }
-    public void add(double toAdd) {
+    protected void add(double toAdd) {
         totalSoFar += toAdd;
     }
 }

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/ServerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ServerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +53,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/static" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Stamp-Duty-Calculator1\src\main\propertytaxcalculator\resources\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\Stamp-Duty-Calculator1\src\main\propertytaxcalculator\resources\templates" />
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Stamp-Duty-Calculator\src\main\propertytaxcalculator\resources\templates" />

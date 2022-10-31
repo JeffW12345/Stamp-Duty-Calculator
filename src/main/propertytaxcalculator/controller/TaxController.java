@@ -16,9 +16,14 @@ public class TaxController {
         this.taxSummaryService = taxSummaryService;
     }
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String viewTaxDetailsForm() {
         return "home.html";
+    }
+
+    @GetMapping("/invalid-property-value")
+    public String invalidPropertyValue() {
+        return "invalid-property-value.html";
     }
 
     @RequestMapping(path = "/", method = RequestMethod.POST)
@@ -27,7 +32,7 @@ public class TaxController {
             @RequestParam String propertyValue,
             Model model) throws Exception {
         if(!isNumeric(propertyValue))  {
-            return "invalid-property-value.html";
+            return "redirect:/invalid-property-value";
         }
         taxSummaryService.process(taxType, propertyValue);
         model.addAttribute("valueProvided", true);

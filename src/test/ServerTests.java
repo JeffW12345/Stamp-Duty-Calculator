@@ -22,6 +22,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import com.google.gson.GsonBuilder;
 
@@ -78,10 +79,26 @@ public class ServerTests {
         TaxSummaryService tss = new GsonBuilder().create().fromJson(json, TaxSummaryService.class);
         Assertions.assertNull(tss.getTaxAmount());
     }
-    
+
+    @Test
+    public void testIfRedirectWorks() throws IOException {
+        context = SpringApplication.run(Main.class);
+        ArrayList<NameValuePair> postParameters;
+        HttpClient httpclient = HttpClientBuilder.create().build();
+        HttpPost httpPost = new HttpPost("http://127.0.0.1:8080/");
+        postParameters = new ArrayList<>();
+        postParameters.add(new BasicNameValuePair("propertyValue", "100a"));
+        postParameters.add(new BasicNameValuePair("taxType", "lbbt"));
+        httpPost.setEntity(new UrlEncodedFormEntity(postParameters, "UTF-8"));
+        HttpResponse response = httpclient.execute(httpPost);
+        String location = Arrays.toString(response.getHeaders("Location"));
+        context.close();
+        Assert.assertTrue(location.contains("http://127.0.0.1:8080/invalid-property-value"));
+    }
+
 
     private String scrape(String urlToProcess) throws IOException {
-        ConfigurableApplicationContext context = SpringApplication.run(Main.class);
+        context = SpringApplication.run(Main.class);
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet requestGet = new HttpGet(urlToProcess);
         HttpResponse response = client.execute(requestGet);

@@ -14,6 +14,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -81,6 +82,7 @@ public class ServerTests {
     }
 
     @Test
+    @DisplayName("If the user enters a property value that isn't a number, they should be redirected.")
     public void testIfRedirectWorks() throws IOException {
         context = SpringApplication.run(Main.class);
         ArrayList<NameValuePair> postParameters;

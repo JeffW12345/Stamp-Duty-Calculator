@@ -6,7 +6,6 @@ public class LbbtTax extends TaxType {
 
     public LbbtTax(double propertyValue) {
         super(propertyValue);
-        name = "LBBT tax (Scottish stamp duty)";
     }
 
     @Override

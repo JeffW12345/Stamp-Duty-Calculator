@@ -7,7 +7,6 @@ public abstract class TaxType {
 
     protected TaxBands taxBands = new TaxBands();
     protected double propertyValue;
-    protected String name;
 
     public TaxType(double propertyValue) {
         this.propertyValue = propertyValue;
@@ -23,5 +22,4 @@ public abstract class TaxType {
         return new NumberFormat().addCommasAndPence(taxDue() + "");
     }
 
-    public String getName(){ return this.name;}
 }

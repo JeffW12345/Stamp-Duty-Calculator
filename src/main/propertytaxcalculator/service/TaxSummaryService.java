@@ -30,9 +30,17 @@ public class TaxSummaryService {
         double propertyValueAsDouble = Double.parseDouble(propertyValue);
         TaxType typeOfTax = new TaxFactory().create(taxEnum(taxType), propertyValueAsDouble);
         this.taxAmount = typeOfTax.taxDueFormattedString();
-        this.taxName = typeOfTax.getName();
+        this.taxName = fullTaxName(taxType);
         this.propertyValue = new NumberFormat().addCommasAndPence(propertyValue);
     }
+
+    private String fullTaxName(String taxType) {
+        if (taxType.equals("lbbt")){
+            return "Lbbt (Scottish property tax)";
+        }
+        throw new InvalidTaxSpecified("Invalid tax specified");
+    }
+
     private TaxNames taxEnum(String taxType) {
         if(taxType.equals("lbbt")){
             return TaxNames.LBBT;

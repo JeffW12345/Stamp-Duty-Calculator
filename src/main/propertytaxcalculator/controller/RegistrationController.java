@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 public class RegistrationController {
     @RequestMapping("/register")
-    public String viewTaxDetailsForm() {
+    public String viewRegistrationForm() {
         return "register.html";
     }
 }

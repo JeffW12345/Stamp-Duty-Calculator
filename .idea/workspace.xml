@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/LbbtTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/LbbtTax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/TaxType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/models/TaxType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/service/TaxSummaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/HelperMethodTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Stamp-Duty-Calculator1\src\main\propertytaxcalculator\resources\templates" />
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Stamp-Duty-Calculator\src\main\propertytaxcalculator\resources\templates" />
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Stamp-Duty-Calculator\src\main\propertytaxcalculator\resources\static" />
       <recent name="C:\Users\Jeff.Waters\IdeaProjects\Java-Stamp-Duty-Calculator\src\main\propertytaxcalculator\resources\templates" />

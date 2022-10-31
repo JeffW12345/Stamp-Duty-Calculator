@@ -17,17 +17,17 @@ public class TaxController {
     }
 
     @RequestMapping("/")
-    public String viewForm(Model model) {
+    public String viewTaxDetailsForm() {
         return "home.html";
     }
 
     @RequestMapping(path = "/", method = RequestMethod.POST)
-    public String home(
+    public String processTaxDetails(
             @RequestParam String taxType,
             @RequestParam String propertyValue,
             Model model) throws Exception {
         if(!isNumeric(propertyValue))  {
-            return "invalid-input.html";
+            return "invalid-property-value.html";
         }
         taxSummaryService.process(taxType, propertyValue);
         model.addAttribute("valueProvided", true);
@@ -39,10 +39,9 @@ public class TaxController {
 
     @GetMapping("/search")
     @ResponseBody
-    public TaxSummaryService search(
+    public TaxSummaryService searchAPI(
             @RequestParam(required = true) String taxType,
-            @RequestParam(required = true) String propertyValue,
-            Model model) throws Exception {
+            @RequestParam(required = true) String propertyValue) {
         taxSummaryService.process(taxType, propertyValue);
         return taxSummaryService;
     }

@@ -20,7 +20,7 @@
             </div>
         </form>
 
-        <div id = "results" th:if="${valueProvided} == true">
+        <div id = "results" th:if="${valueProvided}">
             <p>Tax type: <span th:text="${outputTaxType}"></span></p>
             <p>Property value: £<span th:text="${outputPropertyValue}"></span></p>
             <p>Tax payable: £<span th:text="${outputTaxAmount}"></span></p>

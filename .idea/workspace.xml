@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085a09ba-0519-4b44-ac0f-56a071858834" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/invalid-email.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/HelperMethodTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/controller/TaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/invalid-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/invalid-property-value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/propertytaxcalculator/resources/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

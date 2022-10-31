@@ -1,6 +1,7 @@
 package main.propertytaxcalculator.service;
 
 import main.propertytaxcalculator.models.TaxNames;
+import main.propertytaxcalculator.models.TaxType;
 import main.propertytaxcalculator.models.factory.InvalidTaxSpecified;
 import main.propertytaxcalculator.models.factory.TaxFactory;
 import main.propertytaxcalculator.numberformat.NumberFormat;
@@ -25,10 +26,11 @@ public class TaxSummaryService {
         return taxAmount;
     }
 
-    public void process(String taxType, String propertyValue) throws Exception {
-        this.taxName = taxType;
+    public void process(String taxType, String propertyValue) {
         double propertyValueAsDouble = Double.parseDouble(propertyValue);
-        this.taxAmount = new TaxFactory().create(taxEnum(taxType), propertyValueAsDouble).taxDueFormattedString();
+        TaxType typeOfTax = new TaxFactory().create(taxEnum(taxType), propertyValueAsDouble);
+        this.taxAmount = typeOfTax.taxDueFormattedString();
+        this.taxName = typeOfTax.getName();
         this.propertyValue = new NumberFormat().addCommasAndPence(propertyValue);
     }
     private TaxNames taxEnum(String taxType) {

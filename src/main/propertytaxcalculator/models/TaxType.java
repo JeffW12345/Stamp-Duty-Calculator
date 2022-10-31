@@ -23,4 +23,5 @@ public abstract class TaxType {
         return new NumberFormat().addCommasAndPence(taxDue() + "");
     }
 
+    public String getName(){ return this.name;}
 }

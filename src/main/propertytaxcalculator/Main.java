@@ -10,6 +10,6 @@ public class Main {
 
     public static void main(String[] args) throws MalformedURLException {
         SpringApplication.run(Main.class, args);
-        System.out.println("Click on " + new URL("https://localhost:8080/"));
+        System.out.println("Click on " + new URL("http://localhost:8080/"));
     }
 }

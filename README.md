@@ -15,16 +15,15 @@ To run the application, follow these steps:
    ```bash
    git clone https://github.com/JeffW12345/Stamp-Duty-Calculator
 
-2  **Ensure Maven is Installed**:
+2.  **Ensure Maven is Installed**:
    Make sure you have Maven installed on your system. You can download it from the [Maven website](https://maven.apache.org/download.cgi) if it's not already installed.
 
-3  **Run the application**:
+
+3.  **Run the application**:
 Execute the following command to start the Spring Boot application:
 
    ```bash
    mvn spring-boot:run
    ```
-3  **Run the application**:
-Press control and then clock on the localhost link: 
-
-http://localhost:8080/
+4.  **Run the application**:
+Press control and then clock on the localhost link: http://localhost:8080/

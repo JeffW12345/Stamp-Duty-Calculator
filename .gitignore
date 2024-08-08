@@ -1,10 +1,86 @@
+# Maven
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/mvnw
+!.mvn/wrapper/mvnw.cmd
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+*.class
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Local configuration files
+*.local
+
+# Spring Boot specific
+*.jar
+*.war
+*.zip
+
+# Package and dependency management
+*.lock
+*.nib
+
+# Generated files
+*.class
+*.log
+*.tmp
+
+# IntelliJ IDEA specific files
+.idea/*
+!idea_modules/
+*.iml
+*.ipr
+*.iws
+
+# Java specific
+*.class
+*.jar
+*.war
+
+# Eclipse specific
+.project
+.classpath
+.settings/
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Log files
+*.log
+
+# OS-specific
+*.swp
+*.swo
+*.swn
+*.swo
+*.swn
+
+# Miscellaneous
+*.sqlite
+*.db
+*.sql
+
+# Sensitive information
+*.env
+*.key
+*.pem

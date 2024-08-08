@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamp Duty Calculator</title>
+</head>
+<body>
+<h2>Property Tax Calculator</h2>
+<form action="/" method="post">
+    <label for="propertyValue">Value of Property:</label><br>
+    <input type="text" id="propertyValue" name="propertyValue" required><br>
+    <label for="taxType">Choose a Tax Type:</label><br>
+    <select id="taxType" name="taxType" required>
+        <option value="lbbt">Lbbt (Scottish Property Tax)</option>
+    </select><br><br>
+    <input type="submit" id="submitButton" name="submitButton" value="Submit">
+</form>
+
+<div id="results" th:if="${valueProvided}">
+    <p>Tax Type: <span th:text="${outputTaxType}"></span></p>
+    <p>Property Value: £<span th:text="${outputPropertyValue}"></span></p>
+    <p>Tax Payable: £<span th:text="${outputTaxAmount}"></span></p>
+</div>
+</body>
+</html>
